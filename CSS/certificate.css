@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive, Arial,sans-serif;
+}
+
+*::selection{
+    background: lightblue;
+    color: #3503ba;
+  }
+
+body{
+    background: linear-gradient(-110deg, #3503ba,#0c0d3b);
+    max-height: 100%;
+    overflow: hidden;
+}
+
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: grid;
+    grid-template-columns: 2fr 10fr 1.5fr;
+    grid-template-rows: 100px ;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    transition: 1s;
+}
+
+nav ul li a{
+    font-size: 120%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 16px 8px;
+    background: linear-gradient(225deg, #a62dfb, #3919bc);
+    box-shadow:  6px  6px 10px #11023e,
+                -6px -6px 10px #3503ba;
+    color: #E0E0E0;
+    padding: 9px;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    padding: 13px 30px 13px 30px;
+    font-size: 30px;
+    transition: 0.4s;
+    background: #b02cc0;
+    box-shadow: -0px  0px 50px #7711FA,
+                 0px -0px 50px #7711FA;
+    outline:  solid	#c0b02c 3px;
+    outline-offset: 4px;
+}
+
+nav ul li a:active{
+    font-size: 27px;
+    background: #3503ba;
+    box-shadow: inset  5px  5px 20px #15014a,
+                inset -5px -5px 20px #5505ff;
+    outline: none;
+}
+
+nav ul li:hover{
+    transform: translate(18px, 3px);
+    transition: 0.5s;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+
+.description{
+    width: 50%;
+    height: 10%;
+    margin: 10% auto 0 20% ;
+}
+
+.description h3{
+    font-size: 300%;
+    width: 120%;
+    color: #ac43cc;
+    text-align: center;
+    margin: 0 0 5% 8%;
+    letter-spacing: 0.07em;
+}
+
+.description h1{
+    color: #E0E0E0;
+    width: 140%;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.picture{
+    display: inline;
+    margin: 0 11% 0 0;
+    padding-bottom: 440PX;
+}
+
+.picture img{
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 20%;
+    
+}
+
+.Logo{
+    width: 100%;
+    transition: 1s;
+}
+
+.Logo:hover{
+    transform: scale(0.92);
+    transition: 0.3s;
+}
+
+.Logo:active{
+    transform: scale(0.85);
+}
+
+
+.buttons{
+    background: linear-gradient(159deg, #ab33f5, #3503ba);
+    color: #E0E0E0;
+    padding: 5.5px 58.5px 5.5px 24.5px;
+    font-size: 22px;
+    border-radius: 14.5px;
+    border: none;
+    letter-spacing: 1px;
+    display: grid;
+    align-items: center;
+    position: absolute;
+    height: 58.5px;
+}
+
+.buttons .icon{
+    background: #E0E0E0;
+    position: absolute;
+    height: 46px;
+    width:  46px;
+    border-radius: 0.7em;
+    right: 5px;
+    transition: 0.5s;
+}
+
+.buttons:hover .icon{
+    width: calc(100% - 10px);
+}
+
+.buttons:active .icon{
+    transform: scale(0.9);
+}
+
+.buttonCountainer{
+    text-decoration: none;
+    position: relative;
+    top:  45%;
+    left: 24%;
+}
+
+.buttonCountainer2{
+    text-decoration: none;
+    position: relative;
+    top:  45%;
+    left: 64%;
+}
+
+.buttons:hover .arrow{
+    color:#03C4A1;
+}
+
+.buttons:hover{
+    cursor: pointer;
+    background: #03C4A1;
+    transition: 0.5s;
+}
+
+nav ul li #selected{
+    background: #03C4A1;
+}
+
+
+section .description h1 #two{
+    color: #03C4A1;
+}
+
+.buttons2{
+    background: #E0E0E0;
+    width: 150px;
+    color: black;
+    font-size: 22px;
+    border-radius: 14.5px;
+    letter-spacing: 1px;
+    position: absolute;
+    height: 58.5px;
+    transition: 0.5s;
+    border: none;
+}
+.buttons2:hover{
+    transform: scale(1.2);
+    color: #E0E0E0;
+    transition: 0.3s;
+    background-color: #6c63ff;
+    border: none;
+    outline: solid 5px #a62dfb;
+    outline-offset: 2px;
+}
+
+#temp{
+    width: 143px;
+    font-size: 70%;
+    position: relative;
+}
+
+.arrow{
+    color: #6315d1;
+    transition: 0.5s;;
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+}
+
+.picture:hover{
+    cursor: no-drop;
+}
+
+hr{
+    border: 10px dotted #03C4A1;
+    border-top: 0px; 
+    width: 5%; 
+    margin: auto; 
+    position: relative; 
+    bottom: 10px; 
+    left: 80px;
+}
+
+#account{
+    transition: 0.6s;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#account img{
+    width: 80px; 
+    margin: 3% auto 0 auto;
+}
+
+#account:hover{
+    transform: scale(0.85);
+    transition: 0.3s;
+}
